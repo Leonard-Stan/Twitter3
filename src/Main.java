@@ -52,6 +52,8 @@ public class Main
 
                 }
 
+
+                //ya dentro de la cuenta
                 while (!Objects.equals(answer2, "0"))
                 {
                     System.out.println("¿Desea hacer una Foto(1) o un tweet(2) | ir a la página principal (3) | ver perfil (4)");
@@ -73,6 +75,9 @@ public class Main
                         }
 
                     }
+
+
+
                     else if (Objects.equals(answer2, "2"))
                     {
                         for (Usuario t : motorAplicacion.getUsuarios())
@@ -86,12 +91,15 @@ public class Main
                             }
                         }
                     }
+
+
                     else if (Objects.equals(answer2, "3"))
                     {
                         motorAplicacion.mostrarPublicaciones();
 
-                        answer2 = sc.nextLine();
                     }
+
+
 
                     else if (Objects.equals(answer2, "4"))
                     {
@@ -116,11 +124,7 @@ public class Main
 
 
             }
-
-
         }
-
-
     }
 
 
